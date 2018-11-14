@@ -4,8 +4,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<bean id="p1"
-		class="com.capgemini.agendaBasica.negocioPersona.NegocioPersona"
-		autowire="byName" scope="prototype">
+		class="com.capgemini.agendaBasica.negocioPersona.NegocioPersona" scope="prototype">
 		<property name="nombre" value="Sandra" />
 		<property name="apellidos" value="Cartas Sanchez" />
 		<property name="dni" value="53473082Z" />
@@ -14,8 +13,7 @@
 	</bean>
 
 	<bean id="p2"
-		class="com.capgemini.agendaBasica.negocioPersona.NegocioPersona"
-		autowire="byName" scope="prototype">
+		class="com.capgemini.agendaBasica.negocioPersona.NegocioPersona" scope="prototype">
 		<property name="nombre" value="Adrian" />
 		<property name="apellidos" value="Minguez Graña" />
 		<property name="dni" value="45879087A" />
@@ -24,8 +22,7 @@
 	</bean>
 
 	<bean id="p3"
-		class="com.capgemini.agendaBasica.negocioPersona.NegocioPersona"
-		autowire="byName" scope="prototype">
+		class="com.capgemini.agendaBasica.negocioPersona.NegocioPersona" scope="prototype">
 		<property name="nombre" value="Veronica" />
 		<property name="apellidos" value="Cortes Sanz" />
 		<property name="dni" value="67865456Q" />
