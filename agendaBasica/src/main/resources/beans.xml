@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="p1"
+		class="com.capgemini.agendaBasica.negocioPersona.NegocioPersona"
+		autowire="byName" scope="prototype">
+		<property name="nombre" value="Sandra" />
+		<property name="apellidos" value="Cartas Sanchez" />
+		<property name="dni" value="53473082Z" />
+		<property name="telefono" value="676271089" />
+		<property name="email" value="scartas@gmail.com" />
+	</bean>
+
+	<bean id="p2"
+		class="com.capgemini.agendaBasica.negocioPersona.NegocioPersona"
+		autowire="byName" scope="prototype">
+		<property name="nombre" value="Adrian" />
+		<property name="apellidos" value="Minguez Graña" />
+		<property name="dni" value="45879087A" />
+		<property name="telefono" value="654786790" />
+		<property name="email" value="aming@gmail.com" />
+	</bean>
+
+	<bean id="p3"
+		class="com.capgemini.agendaBasica.negocioPersona.NegocioPersona"
+		autowire="byName" scope="prototype">
+		<property name="nombre" value="Veronica" />
+		<property name="apellidos" value="Cortes Sanz" />
+		<property name="dni" value="67865456Q" />
+		<property name="telefono" value="678321345" />
+		<property name="email" value="vero@gmail.com" />
+	</bean>
+
+	<bean id="serviciosNegocioAgenda"
+		class="com.capgemini.agendaBasica.negocioAgenda.NegocioAgenda"
+		autowire="byName">
+		<property name="contactos">
+			<list>
+				<ref bean="p1" />
+				<ref bean="p2" />
+				<ref bean="p3" />
+
+			</list>
+		</property>
+	</bean>
+
+</beans>
